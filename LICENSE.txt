@@ -1,0 +1,8 @@
+Copyright (c) 2026 Vissolela Emanuela Martins Cundi
+
+All rights reserved.
+
+This repository and its contents are proprietary. No part of this code,
+design, text, images, or other content may be used, copied, modified,
+merged, published, distributed, sublicensed, or sold without explicit
+written permission from the copyright holder.
