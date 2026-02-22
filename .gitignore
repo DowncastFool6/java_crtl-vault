@@ -1,2 +1,32 @@
 # NetBeans project files
 nbproject/
+
+database-scripts/
+
+web/
+
+build.xml
+
+# Build and output directories
+/build/
+/dist/
+/bin/
+
+# IDE files
+nbproject/private/
+*.iml
+*.classpath
+*.project
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Sensitive configs (optional)
+src/conf/*.env
+
+# Temporary Ignore
