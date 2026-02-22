@@ -5,9 +5,9 @@ A collaborative web-based project documentation platform built with Java
 
 ## 👩‍💻 Collaborators
 
--
--
--
+- Alice Lombardi
+- Camila Rial
+- Vissolela Cundi
 
 ------------------------------------------------------------------------
 
