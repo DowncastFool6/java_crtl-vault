@@ -1,4 +1,4 @@
-# 📚 ProjectDocs Platform
+# 📚 Ctrl Vault Project
 
 A collaborative web-based project documentation platform built with Java
 (Servlet + JSP), MySQL, and Apache Tomcat.
@@ -13,7 +13,7 @@ A collaborative web-based project documentation platform built with Java
 
 ## 🚀 Overview
 
-ProjectDocs is a multi-user documentation system where users can:
+Ctrl Vault is a multi-user documentation system where users can:
 
 -   🧑 Register and manage profiles
 -   🔐 Login securely with encrypted passwords
@@ -90,7 +90,7 @@ Render or Railway as alternatives
 ## 📁 Project Folder Structure
 
 ```text
-Portfolio-platform-java/
+Ctrl Vault/
 │
 ├── src/
 │   ├── main/
