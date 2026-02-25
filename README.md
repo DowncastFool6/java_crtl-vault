@@ -1,144 +1,106 @@
-# 📚 Ctrl Vault Project
+# ⚠️ PRIVATE PROJECT – DO NOT USE
 
-A collaborative web-based project documentation platform built with Java
-(Servlet + JSP), MySQL, and Apache Tomcat.
+> **This project is not for public use or distribution. Unauthorized use is strictly prohibited.**
 
-## 👩‍💻 Collaborators
+---
 
-- Alice Lombardi - https://github.com/aliceslombardi
-- Camila Rial - https://github.com/rialcamila
-- Vissolela Cundi - https://github.com/DowncastFool6
+# 📌 Project Overview
 
-------------------------------------------------------------------------
+**Ctrl Vault** 🔐 is a Java-based fullstack project designed to securely manage sensitive data, providing a robust, scalable, and user-friendly interface for information storage and retrieval. The project emphasizes **security**, **accessibility**, and **maintainability**.
 
-## 🚀 Overview
+---
 
-Ctrl Vault is a multi-user documentation system where users can:
+# 🗂️ Project Scope
 
--   🧑 Register and manage profiles
--   🔐 Login securely with encrypted passwords
--   📁 Create and manage documentation projects
--   🧱 Add structured content blocks (Text, Code, Images, Videos, GIFs)
--   🔄 Drag and drop to reorder content blocks
--   💬 Submit messages via a contact form
+**Included:**
+- 🔹 Secure data storage and retrieval  
+- 🔹 User authentication and role management  
+- 🔹 Fullstack Java implementation (Frontend + Backend)  
+- 🔹 Web-based interface with responsive design  
 
-This project demonstrates full-stack Java web development using MVC
-architecture.
+**Excluded:**
+- ❌ Third-party public API integrations  
+- ❌ Mobile app deployment  
+- ❌ External user access beyond assigned collaborators  
 
-------------------------------------------------------------------------
+---
 
-## 🛠 Tech Stack
+# 💻 Technology Stack
 
--   ☕ Java (Servlet + JSP)
--   🗄 MySQL
--   🐱 Apache Tomcat
--   🌐 HTML5, CSS3, JavaScript
--   🎨 Bootstrap 5
--   🔀 SortableJS (Drag & Drop)
--   💻 Prism.js (Syntax Highlighting)
--   🧰 NetBeans IDE
--   🐙 Git & GitHub
+- **Backend:** Java, Spring Boot ☕  
+- **Frontend:** JSP, HTML, CSS, JavaScript 🌐  
+- **Database:** SQL Server 🗄️  
+- **Version Control:** Git + GitHub 🐙  
+- **Build Tool:** Maven ⚙️  
+- **Methodologies:** Scrum + Kanban 📋  
 
-------------------------------------------------------------------------
+---
 
-## 🧱 Architecture
+# 🏗️ System Architecture
 
-This project follows MVC architecture:
+- **Frontend:** UI for CRUD operations and secure data visualization  
+- **Backend:** Business logic, authentication, and API endpoints  
+- **Database:** Relational data storage with secure access controls  
 
-Controller → Servlet Layer\
-Model → Java Classes\
-DAO → Database Interaction\
-View → JSP Pages
+---
 
-------------------------------------------------------------------------
+# 📁 Project Structure
 
-## 🔐 Security Features
-
--   BCrypt password hashing
--   Session-based authentication
--   Input validation
--   Secure file uploads
--   Authorization checks
-
-------------------------------------------------------------------------
-
-## 📦 Database Tables
-
--   Users
--   Projects
--   Blocks
--   ContactMessages
-
-------------------------------------------------------------------------
-
-## ☁ Deployment
-
-Recommended: - Microsoft Azure (via GitHub Student Developer Pack) -
-Render or Railway as alternatives
-
-------------------------------------------------------------------------
-
-## 📌 Future Enhancements
-
--   Comments system
--   Project likes
--   Admin dashboard
--   Markdown support
-
-------------------------------------------------------------------------
-
-## 📁 Project Folder Structure
-
-```text
-Ctrl Vault/
+´´´ text
+CtrlVault/
 │
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   ├── controller/
-│   │   │   │   ├── AuthServlet.java
-│   │   │   │   ├── ProjectServlet.java
-│   │   │   │   ├── BlockServlet.java
-│   │   │   │   └── ContactServlet.java
-│   │   │   │
-│   │   │   ├── dao/
-│   │   │   │   ├── UserDAO.java
-│   │   │   │   ├── ProjectDAO.java
-│   │   │   │   ├── BlockDAO.java
-│   │   │   │   └── ContactDAO.java
-│   │   │   │
-│   │   │   ├── model/
-│   │   │   │   ├── User.java
-│   │   │   │   ├── Project.java
-│   │   │   │   ├── Block.java
-│   │   │   │   └── ContactMessage.java
-│   │   │   │
-│   │   │   └── util/
-│   │   │       ├── DBConnection.java
-│   │   │       ├── PasswordUtil.java
-│   │   │       └── FileUploadUtil.java
-│   │   │
-│   │   ├── webapp/
-│   │   │   ├── WEB-INF/
-│   │   │   │   └── web.xml
-│   │   │   │
-│   │   │   ├── assets/
-│   │   │   │   ├── css/
-│   │   │   │   ├── js/
-│   │   │   │   └── images/
-│   │   │   │
-│   │   │   ├── uploads/
-│   │   │   │
-│   │   │   ├── index.jsp
-│   │   │   ├── about.jsp
-│   │   │   ├── service.jsp
-│   │   │   ├── projects.jsp
-│   │   │   ├── contact.jsp
-│   │   │   ├── login.jsp
-│   │   │   ├── register.jsp
-│   │   │   ├── profile.jsp
-│   │   │   └── project-detail.jsp
-│   │
-│   └── pom.xml
+├─ src/
+│ ├─ main/
+│ │ ├─ java/
+│ │ └─ resources/
+│ └─ webapp/
+│ ├─ WEB-INF/
+│ └─ index.jsp
 │
-└── README.md
+├─ pom.xml
+├─ README.md
+├─ LICENSE
+├─ .gitignore
+└─ docs/
+
+- **src/main/java** → Java source code 📝  
+- **src/main/resources** → Configuration and resource files ⚙️  
+- **src/webapp** → JSP, CSS, JS, and static files 🌐  
+- **docs/** → Project documentation 📚  
+
+---
+
+# 🛠️ Methodology
+
+- **Scrum + Kanban hybrid:**  
+  - Sprint-based iterative development ⏱️  
+  - Task prioritization and workflow tracking ✅  
+- **Programming type:** Fullstack Java development ☕🌐  
+- **Resource allocation:** Each collaborator assigned specific modules based on expertise 🧑‍💻  
+
+---
+
+# 🎯 Minimum Functionalities
+
+1. 🔑 Secure user login/logout  
+2. ➕ Add, ✏️ Edit, 🗑️ Delete, and 👁️ View records  
+3. 🛡️ Role-based access control  
+4. 🗄️ Database integration with SQL Server  
+5. 📱 Responsive and intuitive interface  
+6. 📜 Basic logging and audit of user actions  
+
+---
+
+# 👥 Collaborators
+
+- ALICE SANTOS LOMBARDI              https://github.com/aliceslombardi
+- CAMILA PEREIRA RIAL                https://github.com/rialcamila
+- VISSOLELA EMANUELA MARTINS CUNDI   https://github.com/DowncastFool6
+
+---
+
+# 📜 License
+
+This project is proprietary. See the `LICENSE` file for full rights and terms.  
+
+© 2026 **Ctrl Vault** – All Rights Reserved
