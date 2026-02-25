@@ -1,0 +1,92 @@
+[
+  {
+    "name": "setup",
+    "color": "1F2937",
+    "description": "Project initialization and environment configuration tasks."
+  },
+  {
+    "name": "infrastructure",
+    "color": "374151",
+    "description": "Core system architecture and foundational configuration."
+  },
+  {
+    "name": "configuration",
+    "color": "4B5563",
+    "description": "Server, environment, and dependency configuration."
+  },
+  {
+    "name": "database",
+    "color": "065F46",
+    "description": "Database schema, queries, and persistence layer tasks."
+  },
+  {
+    "name": "mvc",
+    "color": "0E7490",
+    "description": "Model-View-Controller architectural implementation."
+  },
+  {
+    "name": "backend",
+    "color": "7C3AED",
+    "description": "Server-side logic, services, controllers, and DAO layer."
+  },
+  {
+    "name": "frontend",
+    "color": "DB2777",
+    "description": "User interface components, JSP pages, and UI styling."
+  },
+  {
+    "name": "feature",
+    "color": "2563EB",
+    "description": "New functionality implementation."
+  },
+  {
+    "name": "crud",
+    "color": "0891B2",
+    "description": "Create, Read, Update, Delete operations."
+  },
+  {
+    "name": "validation",
+    "color": "B45309",
+    "description": "Input validation and business rule enforcement."
+  },
+  {
+    "name": "business-logic",
+    "color": "9333EA",
+    "description": "Application service layer and domain logic."
+  },
+  {
+    "name": "security",
+    "color": "991B1B",
+    "description": "Authentication, authorization, and access control."
+  },
+  {
+    "name": "authentication",
+    "color": "7F1D1D",
+    "description": "User login, logout, and credential validation."
+  },
+  {
+    "name": "testing",
+    "color": "059669",
+    "description": "Functional, integration, and validation testing tasks."
+  },
+  {
+    "name": "bug",
+    "color": "DC2626",
+    "description": "Defects, errors, and system issues."
+  },
+  {
+    "name": "ui-improvement",
+    "color": "EA580C",
+    "description": "User interface enhancements and UX refinement."
+  },
+  {
+    "name": "deployment",
+    "color": "1D4ED8",
+    "description": "Production configuration and deployment preparation."
+  },
+  {
+    "name": "documentation",
+    "color": "6B7280",
+    "description": "Technical and user documentation tasks."
+  }
+]
