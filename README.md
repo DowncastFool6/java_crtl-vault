@@ -1,4 +1,4 @@
-# ⚠️ PRIVATE PROJECT – DO NOT USE
+- ⚠️ PRIVATE PROJECT – DO NOT USE
 
 > **This project is not for public use or distribution. Unauthorized use is strictly prohibited.**
 
@@ -44,32 +44,6 @@
 
 ---
 
-# 📁 Project Structure
-
-´´´ text
-CtrlVault/
-│
-├─ src/
-│ ├─ main/
-│ │ ├─ java/
-│ │ └─ resources/
-│ └─ webapp/
-│ ├─ WEB-INF/
-│ └─ index.jsp
-│
-├─ pom.xml
-├─ README.md
-├─ LICENSE
-├─ .gitignore
-└─ docs/
-
-- **src/main/java** → Java source code 📝  
-- **src/main/resources** → Configuration and resource files ⚙️  
-- **src/webapp** → JSP, CSS, JS, and static files 🌐  
-- **docs/** → Project documentation 📚  
-
----
-
 # 🛠️ Methodology
 
 - **Scrum + Kanban hybrid:**  
@@ -104,3 +78,26 @@ CtrlVault/
 This project is proprietary. See the `LICENSE` file for full rights and terms.  
 
 © 2026 **Ctrl Vault** – All Rights Reserved
+
+---
+
+# 📁 Project Structure
+
+```text
+CtrlVault/
+│
+├─ src/
+│ ├─ main/
+│ │ ├─ java/
+│ │ └─ resources/
+│ └─ webapp/
+│ ├─ WEB-INF/
+│ └─ index.jsp
+│
+├─ pom.xml
+├─ README.md
+├─ LICENSE
+├─ .gitignore
+└─ docs/
+ 
+
