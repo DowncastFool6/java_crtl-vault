@@ -1,8 +1,34 @@
-Copyright (c) 2026 Vissolela Emanuela Martins Cundi
+Ctrl Vault – Proprietary License
+
+Copyright (c) 2026
+
+Collaborators:
+- ALICE SANTOS LOMBARDI
+- VISSOLELA EMANUELA MARTINS CUNDI
+- CAMILA PEREIRA RIAL
 
 All rights reserved.
 
-This repository and its contents are proprietary. No part of this code,
-design, text, images, or other content may be used, copied, modified,
-merged, published, distributed, sublicensed, or sold without explicit
-written permission from the copyright holder.
+1. **Ownership**
+This software and all associated documentation, code, designs, and intellectual property are the exclusive property of the above-listed collaborators.
+
+2. **Restrictions**
+You may NOT:
+- Copy, modify, or distribute this software without explicit permission.
+- Use this software for commercial or public purposes.
+- Reverse engineer, decompile, or attempt to extract source code.
+- Share access credentials or deploy the project outside of authorized environments.
+
+3. **Permitted Use**
+Authorized collaborators may use, modify, and test the software strictly for development and internal purposes.
+
+4. **Liability**
+The authors are not liable for any damages arising from unauthorized use, misuse, or distribution of this software.
+
+5. **Termination**
+Any violation of this license will result in immediate termination of access and potential legal action.
+
+6. **Governing Law**
+This license is governed by the applicable laws of Portugal, and any disputes will be handled under its jurisdiction.
+
+By using this software, you acknowledge and agree to abide by the terms of this proprietary license.
