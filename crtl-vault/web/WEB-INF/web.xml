@@ -16,6 +16,17 @@
         <servlet-name>dispatcher</servlet-name>
         <url-pattern>*.htm</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <!--Responsavel por solicitar acesso no sistema -->
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>pt.com.ctrl.vault.controller.RegisterController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>    
+    
     <session-config>
         <session-timeout>
             30
