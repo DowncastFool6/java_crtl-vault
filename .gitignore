@@ -1,32 +1,67 @@
-# NetBeans project files
-nbproject/
+############################
+# IDEs
+############################
 
-database-scripts/
-
-web/
-
-build.xml
-
-# Build and output directories
-/build/
-/dist/
-/bin/
-
-# IDE files
-nbproject/private/
+# IntelliJ IDEA
+.idea/
 *.iml
-*.classpath
-*.project
+out/
 
-# OS files
-.DS_Store
-Thumbs.db
+# Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+bin/
 
-# Logs and temp files
+# NetBeans
+nbproject/
+nbbuild/
+nbdist/
+.nb-gradle/
+dist/
+
+# VS Code
+.vscode/
+
+############################
+# Build
+############################
+
+# Maven
+target/
+
+# Gradle
+.gradle/
+build/
+
+############################
+# Logs & Temp
+############################
+
 *.log
 *.tmp
 
-# Sensitive configs (optional)
+############################
+# SO
+############################
+
+.DS_Store
+Thumbs.db
+
+############################
+# Configurações Sensíveis
+############################
+
 src/conf/*.env
 
-# Temporary Ignore
+############################
+# Others
+############################
+
+database-scripts/
+web/
+build.xml
