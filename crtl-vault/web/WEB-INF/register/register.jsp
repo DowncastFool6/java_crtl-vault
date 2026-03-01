@@ -1,7 +1,7 @@
 <%-- 
     Document   : register
     Created on : 28/02/2026, 17:47:35
-    Author     : santo
+    Author     : aliceslombardi
 --%>
 
 <%@ page contentType="text/html;charset=UTF-8" %>
@@ -11,20 +11,32 @@
 </head>
 <body>
 
-<h2>Registrar Novo Usuário</h2>
+<h2>Registar Novo Usuário</h2>
 
-<form action="register" method="post">
+<!-- Mensagem de erro -->
+<c:if test="${not empty erro}">
+    <p style="color: red;">
+        ${erro}
+    </p>
+</c:if>
+
+<form action="${pageContext.request.contextPath}/register" method="post">
 
     <label>Nome:</label><br>
-    <input type="text" name="nome" required><br><br>
+    <input type="text" name="nome"
+           value="${param.nome}" required>
+    <br><br>
 
     <label>Email:</label><br>
-    <input type="email" name="email" required><br><br>
+    <input type="email" name="email"
+           value="${param.email}" required>
+    <br><br>
 
     <label>Senha:</label><br>
-    <input type="password" name="senha" required><br><br>
+    <input type="password" name="senha" required>
+    <br><br>
 
-    <button type="submit">Registrar</button>
+    <button type="submit">Registar</button>
 
 </form>
 

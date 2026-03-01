@@ -1,7 +1,7 @@
 package pt.com.ctrl.vault.repository;
 
 import java.sql.*;
-import pt.com.ctrl.vault.controller.database.util.ConnectionFactory;
+import pt.com.ctrl.vault.util.ConnectionFactory;
 import pt.com.ctrl.vault.model.Usuario;
 
 /**
@@ -11,9 +11,9 @@ import pt.com.ctrl.vault.model.Usuario;
  */
 public class UsuarioRepository {
 
-    public boolean existsByEmail(String email) {
+    public Usuario buscarPorEmail(String email) {
 
-        String sql = "SELECT COUNT(*) FROM tb_usuario WHERE email = ?";
+        String sql = "SELECT * FROM tb_usuario WHERE email = lower(?)";
 
         Connection conn = null;
         PreparedStatement stmt = null;
@@ -27,63 +27,41 @@ public class UsuarioRepository {
             rs = stmt.executeQuery();
 
             if (rs.next()) {
-                return rs.getInt(1) > 0;
+                Usuario usuario = new Usuario();
+                usuario.setId(rs.getInt("id"));
+                usuario.setNome(rs.getString("nome"));
+                usuario.setEmail(rs.getString("email"));
+                usuario.setSenha(rs.getString("senha"));
+                usuario.setAtivo(rs.getBoolean("ativo"));
+                usuario.setDataCriacao(rs.getTimestamp("data_criacao").toLocalDateTime());
+
+                return usuario;
             }
 
+            return null;
+
         } catch (SQLException e) {
-            throw new RuntimeException("Erro ao verificar email", e);
+            throw new RuntimeException("Erro ao buscar usuário", e);
         } finally {
             ConnectionFactory.close(conn, stmt, rs);
         }
-
-        return false;
-    }
-
-    public void save(Usuario usuario) {
-
-        String sql = """
-                INSERT INTO tb_usuario 
-                (nome, email, senha, id_tipo_usuario, ativo, data_criacao)
-                VALUES (?, ?, ?, ?, ?, ?)
-                """;
-
-        Connection conn = null;
-        PreparedStatement stmt = null;
-
-        try {
-            conn = ConnectionFactory.getConnection();
-            stmt = conn.prepareStatement(sql);
-
-            stmt.setString(1, usuario.getNome());
-            stmt.setString(2, usuario.getEmail());
-            stmt.setString(3, usuario.getSenha());
-            stmt.setInt(4, usuario.getTipoUsuario().getId());
-            stmt.setBoolean(5, usuario.getAtivo());
-            stmt.setTimestamp(6, Timestamp.valueOf(usuario.getDataCriacao()));
-
-            stmt.executeUpdate();
-
-        } catch (SQLException e) {
-            throw new RuntimeException("Erro ao salvar usuário", e);
-        } finally {
-            ConnectionFactory.close(conn, stmt);
-        }
     }
     
-    public void saveTemporaryUser(Usuario usuario) {
+    public Integer salvarNovoUsuario(Usuario usuario) {
 
         String sql = """
                 INSERT INTO tb_usuario 
                 (nome, email, senha, ativo, data_criacao)
-                VALUES (?, ?, ?, ?, ?)
+                VALUES (?, lower(?), ?, ?, ?)
                 """;
 
         Connection conn = null;
         PreparedStatement stmt = null;
+        ResultSet rs = null;
 
         try {
             conn = ConnectionFactory.getConnection();
-            stmt = conn.prepareStatement(sql);
+            stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
 
             stmt.setString(1, usuario.getNome());
             stmt.setString(2, usuario.getEmail());
@@ -92,12 +70,21 @@ public class UsuarioRepository {
             stmt.setTimestamp(5, Timestamp.valueOf(usuario.getDataCriacao()));
 
             stmt.executeUpdate();
+            
+            rs = stmt.getGeneratedKeys();
+            Integer idUsuarioCriado = null;
+            if (rs.next()) {
+                idUsuarioCriado = rs.getInt(1);
+            }
+            
+            return idUsuarioCriado;
 
         } catch (SQLException e) {
             throw new RuntimeException("Erro ao salvar usuário", e);
         } finally {
-            ConnectionFactory.close(conn, stmt);
+            ConnectionFactory.close(conn, stmt, rs);
         }
+        
     }
         
 }

@@ -25,7 +25,37 @@
     <servlet-mapping>
         <servlet-name>RegisterServlet</servlet-name>
         <url-pattern>/register</url-pattern>
-    </servlet-mapping>    
+    </servlet-mapping>  
+    
+    <servlet>
+        <!--Responsavel gerenciar o login no sistema -->
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>pt.com.ctrl.vault.controller.LoginController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping> 
+    
+    <servlet>
+        <!--Responsavel por fazer logout do usuario -->
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>pt.com.ctrl.vault.controller.LogoutController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>        
+    
+    <servlet>
+        <!--Responsavel por mostar a dashboard do Usuario -->
+        <servlet-name>DashboardServlet</servlet-name>
+        <servlet-class>pt.com.ctrl.vault.controller.DashboardController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DashboardServlet</servlet-name>
+        <url-pattern>/dashboard</url-pattern>
+    </servlet-mapping>   
     
     <session-config>
         <session-timeout>

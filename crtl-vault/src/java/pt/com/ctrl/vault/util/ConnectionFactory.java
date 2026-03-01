@@ -1,4 +1,4 @@
-package pt.com.ctrl.vault.controller.database.util;
+package pt.com.ctrl.vault.util;
 
 import java.sql.*;
 
